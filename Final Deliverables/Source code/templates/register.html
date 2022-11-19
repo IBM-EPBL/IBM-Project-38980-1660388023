@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Form</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+       <nav class="navbar">
+            <!-- LOGO -->
+          <div class="logo">Virtual Eye</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <div class="menu">
+            <li><a href="http://127.0.0.1:5000">Home</a></li>
+            <li><a href="/register"><a href="http://127.0.0.1:5000/register" target="blank">Register</a></li>
+            <li><a href="/login"><a href="http://127.0.0.1:5000/login" target="blank">Login</a></li>
+          </div>
+            </ul>
+       </nav>
+            <img src="https://leisurepoolsusa.com/wp-content/uploads/2021/12/vinyl-liner-inground-swimming-pool.jpg" alt="swimkid" style="width:100%;height:0%";>
+       <div class="registration-form">
+   	      <h1>Register</h1>
+   	      <form action="{{url_for('afterreg')}}" method="post">
+   	 	   <p>Full Name:</p>
+   	 	   <input type="text" name="fullname" placeholder="Enter Full Name" required>
+   	 	   <p>Email ID:</p>
+   	 	   <input type="email" name="email" placeholder="Enter Email ID" required>
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit"> Register </button>
+            <div style="color:red;">{{pred}}</div>
+            <p>Already have an account?  <a href="http://127.0.0.1:5000/login" target="blank"><u>Login</u></a></p>
+           </form>
+       </div>
+</body>
+</html>

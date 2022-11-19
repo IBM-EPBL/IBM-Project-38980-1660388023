@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); 
+body {
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+overflow-x: hidden;
+}
+nav {
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+padding:0 10px;
+height: 80px;
+background-color:black;
+}
+nav .logo {
+float: left;
+width: 40%;
+height: 100%;
+display: flex;
+align-items: center;
+font-size: 40px;
+color: #fff;
+}
+nav .links {
+float: right;
+padding: 0;
+margin: 0;
+width: 15%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+nav .links li {
+list-style: none;
+}
+nav .links a {
+display: block;
+font-size: 20px;
+padding:12px 15px;
+border-radius: 3px;
+color: #fff;
+text-decoration: none;
+}
+nav .links a:hover{
+background: gray;
+}
+a.active,a:hover{
+background:gray;
+transition: .5s;
+}
+#nav-toggle {
+position: absolute;
+top: -100px;
+}
+nav .icon-burger {
+display: none;
+position: absolute;
+right: 5%;
+top: 50%;
+transform: translateY(-50%);
+}
+nav .icon-burger .line {
+width: 30px;
+height: 5px;
+background-color: #fff;
+margin: 5px;
+border-radius: 3px;
+transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+nav .logo {
+float: none;
+width: auto;
+justify-content: center;
+}
+nav .links {
+float: none;
+position: fixed;
+z-index: 9;
+left: 0;
+right: 0;
+top: 100px;
+bottom: 100%;
+width: auto;
+height: auto;
+flex-direction: column;
+justify-content: space-evenly;
+background-color: rgba(0,0,0,.8);
+overflow: hidden;
+box-sizing: border-box;
+transition: all .5s ease-in-out;
+}
+nav .links a {
+font-size: 20px;
+}
+nav :checked ~ .links {
+bottom: 0;
+}
+nav .icon-burger {
+display: block;
+}
+}
+img{
+width:100%;
+height:350px;
+margin-top:80px;
+}
+.content{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.content h1{
+border-bottom: 4px solid rgb(96, 188, 245);
+width:1000PX;
+justify-content: center;
+line-height: 40px;
+color: gray;
+}
+.img1{
+height:300px;
+width:700px;
+position: absolute;
+    left:780px;
+top:490px;
+}
+.child{
+width:48%;
+float:left;
+height: 320px;
+margin:10px 14px;
+}
+.child img{
+ position: relative;
+left: 670px;
+bottom: 390px;
+}
+.child p{
+text-align: justify;
+justify-content:center;
+align-items: center;
+padding: 10px;
+}
+.button{
+width:400px;
+height:50px;
+position: absolute;
+top:900px;
+left:950px;
+background:rgba(2, 115, 244, 0.676);
+border-radius: 5px;
+font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+.child{
+width:100%;
+float:left;
+margin:15px;
+}
+.img1{
+height:300px;
+width:700px;
+position: relative;
+left:20px;
+top:150px;
+}
+}
+
+   </style>
+</head>
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">Virtual Eye</div>
+        <ul class="links">
+        <li><a href="http://127.0.0.1:5000/">Home</a></li>
+        <li><a href="http://127.0.0.1:5000/logout">Logout</a></li></ul>
+        <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </label>
+    </nav>
+    <img src="https://media.istockphoto.com/id/1125308998/photo/the-boy-drowns-in-the-water-in-the-pool-or-the-sea-and-calls-for-help.jpg?s=612x612&w=0&k=20&c=1Q8LGzz44bN-J3ErSYAl7vaeFDyrznhoCo-TkE2-lrQ=">
+    <div class="content">
+        <h1>Virtual Eye - Life Guard for Swimming Pools to
+            Detect Active Drowning</h1>
+    </div>
+    <div class="Parent">
+        <div class="child">
+            <p>Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle. Swimming pools are found larger in number in hotels, and weekend tourist spots and barely people have them in their house backyard. Beginners, especially, often feel it difficult to breathe underwater which causes breathing trouble which in turn causes a drowning accident. Worldwide, drowning produces a higher rate of mortality without causing injury to children. Children under six of their age are found to be suffering the highest drowning mortality rates worldwide. Such kinds of deaths account for the third cause of unplanned death globally, with about 1.2  million cases yearly.
+         </div>
+
+         <center>  <form id="form" action="/action_page.php" method="post" enctype="multipart/form-data">
+            <input type="submit"  value="Click here! For a Demo">
+          </form>
+         </center>
+
+         <div class="child">
+            <img src="https://imgix.bustle.com/uploads/image/2018/10/22/d05f971c-2e38-48d2-a219-1b4d584e51ab-shutterstock_697670554.jpg?w=614&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2">
+        </div>
+    </div>
+</body>
+</html>

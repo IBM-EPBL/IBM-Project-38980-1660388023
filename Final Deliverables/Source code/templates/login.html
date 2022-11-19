@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+   <nav class="navbar">
+         <!-- LOGO -->
+      <div class="logo">Virtual Eye</div>
+         <!-- NAVIGATION MENU -->
+         <ul class="nav-links">
+         <!-- USING CHECKBOX HACK -->
+      <div class="menu">
+         <li><a href="http://127.0.0.1:5000/">Home</a></li>
+         </li>
+         <li><a href="http://127.0.0.1:5000/register"><a href="file:///C:/Users/Pavi/Desktop/register.html" target="blank">Register</a></li>
+         <li><a href="http://127.0.0.1:5000/login"><a href=" file:///C:/Users/Pavi/Desktop/login.html" target="blank">Login</a></li>
+      </div>
+         </ul>
+   </nav>
+         <img src="https://wallpaperaccess.com/full/3554251.jpg" alt="swimkid" style="width:100%;height:0%";>
+      <div class="registration-form">
+   	   <h1>Login</h1>
+   	   <form action="{{url_for('afterlogin')}}" method="post">
+   	 	<p>Registered Email ID:</p>
+   	 	<input type="email" placeholder="Enter registered email ID" name="email" required>
+         <p>Password:</p>
+         <input type="password" name="password" placeholder="Enter Password" required>
+         <button type="submit"><a href="http://127.0.0.1:5000/prediction" target="blank"></a>Login</button>
+         <div style="color:red;">{{pred}}</div>
+          <p><a href="/register"><a href="file:///C:/Users/Pavi/Desktop/forgot.html" target="blank"><u>Forgot Password?</u></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="/register"><a href="http://127.0.0.1:5000/register" target="blank"><u>New User?</u></a></p>
+         </form>
+      </div>
+</body>
+</html>

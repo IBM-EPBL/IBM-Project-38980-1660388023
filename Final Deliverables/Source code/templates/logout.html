@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Logout Form</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+   <nav class="navbar">
+         <!-- LOGO -->
+         <div class="logo">Virtual Eye</div>
+         <!-- NAVIGATION MENU -->
+         <ul class="nav-links">
+         <!-- USING CHECKBOX HACK -->
+         <div class="menu">
+         <li><a href="http://127.0.0.1:5000/index">Home</a></li>
+         <li><a href="/register"><a href="http://127.0.0.1:5000/register" target="blank">Register</a></li>
+         <li><a href="/login"><a href="http://127.0.0.1:5000/login" target="blank">Login</a></li>
+         </div>
+         </ul>
+   </nav>
+
+   <img src="https://img.freepik.com/free-photo/swimming-pool_74190-3615.jpg?w=2000" alt="swimkid" style="width:100%;height:0%";>
+   
+   <div class="registration-form">
+   	 <h2>Successfully Logged Out!</h2>
+   	 <form action="#" method="post">
+       <h3>Login for more information</h3>
+       <button type="submit"><a href="http://127.0.0.1:5000/login" target="blank">Login</a></button>
+      </form>
+   </div>
+</body>
+</html>
